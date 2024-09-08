@@ -6,10 +6,12 @@
     <span class="section-heading-lower">Recipes!</span>
 </h2>
 <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+    {% for recipe in recipes %}
     <li class="list-unstyled-item list-hours-item d-flex">
-        Sunday
-        <span class="ms-auto">Closed</span>
+        {{ recipe.recipe_name }}
+        <span class="ms-auto">{{ recipe.cuisine_id }}</span>
     </li>
+    {% endfor %}
 </ul>
             
 {% endblock %}
