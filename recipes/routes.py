@@ -49,10 +49,10 @@ def add_recipe():
             recipe_duration=request.form.get("recipe_duration"),
             cuisine_id=request.form.get("cuisine_id")
         )
-        db.session.add(task)
+        db.session.add(recipe)
         db.session.commit()
         return redirect(url_for("home"))
-    return render_template("add_recipe.html", recipes=recipes)
+    return render_template("add_recipe.html", cuisines=cuisines)
 
 @app.route("/edit_recipe/<int:recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
