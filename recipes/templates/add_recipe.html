@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3>Add Recipe</h3>
+<h2 class="section-heading mb-5">
+    <span class="section-heading-upper raleway">Add Recipe</span>
+</h2>
 
 <div class="row">
     <form class="col" method="POST" action="{{ url_for('add_recipe') }}">
