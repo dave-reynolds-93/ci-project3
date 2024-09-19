@@ -124,7 +124,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   Haven't implemented adding ingredients to the recipes.
 -   The date in the footer is not dynamically added.
 -   Whitespace at bottom of some of the pages.
--   Recipes page doesn't have edit or delte buttons.
+-   No buttons to add cuisine or recipe on those pages
+-   When there are no recipes, it still says here are the recipes. Same for cuisine page.
+
 
 ### Bugs that were fixed
 

@@ -62,9 +62,10 @@ def edit_recipe(recipe_id):
         recipe.recipe_name = request.form.get("recipe_name")
         recipe.recipe_description = request.form.get("recipe_description")
         recipe.is_vegetarian = bool(True if request.form.get("is_vegetarian") else False)
-        recipe.duration = request.form.get("duration")
+        recipe.recipe_duration = request.form.get("recipe_duration")
         recipe.cuisine_id = request.form.get("cuisine_id")
         db.session.commit()
+        return redirect(url_for("home"))
     return render_template("edit_recipe.html", recipe=recipe, cuisines=cuisines)
 
 @app.route("/delete_recipe/<int:recipe_id>")
