@@ -120,7 +120,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   N/A
+-   Duration field currently accepts negative integers.
+-   Haven't implemented adding ingredients to the recipes.
+-   The date in the footer is not dynamically added.
+-   Whitespace at bottom of some of the pages.
+-   Recipes page doesn't have edit or delte buttons.
 
 ### Bugs that were fixed
 
