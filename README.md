@@ -130,8 +130,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   Duration field currently accepts negative integers.
 -   Haven't implemented adding ingredients to the recipes.
 -   The date in the footer is not dynamically added.
--   Whitespace at bottom of some of the pages.
+-   Whitespace at bottom of some of the pages on some device sizes.
 -   When there are no recipes, it still says here are the recipes. Same for cuisine page.
+-   Reynolds Recipes in the nav link isn't working.
+-   Recipe description text area won't allow typing longer than 2 lines.
 
 
 ### Bugs that were fixed
@@ -140,33 +142,46 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Screenshots
 
-1. Homepage desktop and mobile.
+1. Recipes page desktop and mobile.  
 
-![Homepage desktop](/assets/images/indexDesktop.png)
-![Homepage mobile top](/assets/images/indexMobileTop.png)
-![Homepage mobile middle](/assets/images/indexMobileMiddle.png)
-![Homepage mobile bottom](/assets/images/indexMobileBottom.png)
+Desktop
+![Recipes page desktop](/recipes/static/images/recipesDesktop.png)
+Desktop Accordion Expanded
+![Recipes page desktop accordion expanded](/recipes/static/images/recipesAccordionExpanded.png)
+Mobile
+![Recipes page mobile](/recipes/static/images/recipesMobile.png)
+Mobile Accordion Expanded
+![Recipes page mobile accordion expanded](/recipes/static/images/recipesAccordionExpandedMobile.png)
 
-2. Map page desktop and mobile
+2. Cuisines page desktop and mobile  
+Desktop
+![Cuisines page desktop](/recipes/static/images/cuisinesDesktop.png)
+Mobile
+![Cuisines page mobile](/recipes/static/images/cuisinesMobile.png)
 
-![Map page desktop](/assets/images/mapDesktop.png)
-![Map page mobile top](/assets/images/mapMobileTop.png)
-![Map page mobile middle](/assets/images/mapMobileMiddle.png)
-![Map page mobile bottom](/assets/images/mapMobileBottom.png)
+3. Add/Edit recipe page desktop and mobile  
 
-3. Contact page desktop and mobile
+Desktop
+![Add/Edit recipe page desktop](/recipes/static/images/addRecipeDesktop.png)
+Mobile
+![Add/Edit recipe page mobile](/recipes/static/images/addRecipeMobile.png)
 
-![Contact page desktop](/assets/images/contactDesktop.png)
-![Contact page mobile top](/assets/images/contactMobileTop.png)
-![Contact page mobile middle](/assets/images/contactMobileMiddle.png)
-![Contact page mobile bottom](/assets/images/contactMobileBottom.png)
-![Contact page desktop with thanks message](/assets/images/contactDesktopThanks.png)
-![Contact page mobile with thanks message](/assets/images/contactMobileThanks.png)
+4. Add/Edit cuisine page desktop and mobile  
 
-4. Footer desktop and mobile
+Desktop
+![Add/Edit cuisine page desktop](/recipes/static/images/addCuisineDesktop.png)
+Mobile
+![Add/Edit cuisine page mobile](/recipes/static/images/addCuisineMobile.png)
 
-![Footer desktop](/assets/images/footerDesktop.png)
-![Footer mobile](/assets/images/footerMobile.png)
+5. Footer desktop and mobile
+
+![Footer](/recipes/static/images/footer.png)
+
+6. Header desktop and mobile
+
+![Header desktop](/recipes/static/images/headerDesktop.png)
+![Header mobile](/recipes/static/images/headerMobile.png)
+
 
 ## Deployment
 

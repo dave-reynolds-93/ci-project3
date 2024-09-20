@@ -22,6 +22,10 @@ h2 {
   margin: 5px;
 }
 
+.btn-cuisine {
+  color: black;
+}
+
 .add-btn {
   margin-bottom: 20px;
 }
@@ -76,6 +80,10 @@ label {
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: #e6a756;
+}
+
+#navbarSupportedContent {
+  margin-left: -15%;
 }
 
 
