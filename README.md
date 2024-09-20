@@ -76,14 +76,22 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 -   [JsHint](https://jshint.com/)
 
-1.  Index page html validated.
-![Index Validated](/assets/images/htmlValidatorIndex.png)
-2.  Css validated. There were 5 warnings from external links and extensions.
-![Css Validated](/assets/images/cssValidated.png)
-3.  Script.js validated. There were 5 warnings from arrow functions only being compatible in ES6, so I added /*jshint esversion: 6 */ at the top of the file, and the warnings disappeared. My mentor told me this.
-![Script.js Validated](/assets/images/scriptJsValidated.png)
-3.  Email.js validated. There are 2 warnings, one saying emailjs is an undefined variable, the other saying sendMail is an unused variable. The code works, so I left it as it is.
-![Email.js Validated](/assets/images/emailJsValidated.png)
+1.  base.html validated. Jinja errors and warnings.
+![base.html Validated](/recipes/static/images/baseValidated.png)
+2.  add_recipe.html validated. Jinja errors and warnings.
+![add_recipe.html Validated](/recipes/static/images/addRecipeValidated.png)
+3.  add_cuisine.html validated. Jinja errors and warnings.
+![add_cuisine.html Validated](/recipes/static/images/addCuisineValidated.png)
+4.  edit_cuisine.html validated. Jinja errors and warnings.
+![edit_cuisine.html Validated](/recipes/static/images/editCuisineValidated.png)
+5.  edit_recipe.html validated. Jinja errors and warnings.
+![edit_recipe.html Validated](/recipes/static/images/editRecipeValidated.png)
+6.  recipes.html validated. Jinja errors and warnings.
+![recipes.html Validated](/recipes/static/images/recipesValidated.png)
+7.  cuisines.html validated. Jinja errors and warnings.
+![cuisines.html Validated](/recipes/static/images/cuisinesValidated.png)
+8.  Css validated. There were 5 warnings from external links and extensions.
+![Css Validated](/recipes/static/images/cssValidated.png)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -92,8 +100,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the cuisines and recipes, and how to implement CRUD functionality for both.
 
         1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice.
-        2. The main points are made immediately with the title.
-        3. The user has two options, read what's on the homepage to see what recipes are already there, or click through to one of the other pages, to add a recipe or cuisine to the site.
+        2. The user has two options, read what's on the homepage to see what recipes are already there, or click through to one of the other pages, to add a recipe or cuisine to the site.
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
@@ -124,7 +131,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   Haven't implemented adding ingredients to the recipes.
 -   The date in the footer is not dynamically added.
 -   Whitespace at bottom of some of the pages.
--   No buttons to add cuisine or recipe on those pages
 -   When there are no recipes, it still says here are the recipes. Same for cuisine page.
 
 
@@ -214,16 +220,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Code
 
 -   [Bootstrap 5.3.2](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System, navbar and also for styling.
-
--   I got the code for the navbar from the [Bootstrap Documentation](https://getbootstrap.com/docs/4.1/components/navbar/)
-
--   I got the code for the form on the contact page from the [Bootstrap Documentation](https://getbootstrap.com/docs/4.1/components/forms/)
-
--   I got the inspiration, and some of the code, for the single page application from the [Harvard CS50 Web Development User Interfaces Video.](https://www.youtube.com/watch?v=jrBhi8wbzPw&t=674s&ab_channel=CS50)
-
--   I got the code for the google maps map from the [Google maps API documentation.](https://developers.google.com/maps/documentation)
-
--   I got the code for the EmailJs form to send an email to myself, from the [Code Institute, Interactive Frontend Development, Putting it all Together, Sending emails using EmailJs section.](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/)
 
 
 

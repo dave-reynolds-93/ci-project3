@@ -4,6 +4,9 @@
 <h2 class="section-heading mb-5">
     <span class="section-heading-upper raleway">Cuisines</span>
 </h2>
+
+<a href="{{ url_for('add_cuisine') }}" class="btn add-btn">Add Cuisine</a>
+
 <div class="row raleway">
     {% for cuisine in cuisines %}
         <div class="col-sm-6">

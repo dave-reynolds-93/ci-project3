@@ -19,8 +19,8 @@
             <div class="col">
                 <label for="recipe_description">Recipe Description</label>
                 <textarea id="recipe_description" name="recipe_description" minlength="5" 
-                maxlength="200" type="text" required class="form-control" 
-                placeholder="Enter Description"">{{ recipe.recipe_description }}</textarea>
+                maxlength="200" required class="form-control" 
+                placeholder="Enter Description">{{ recipe.recipe_description }}</textarea>
             </div>
         </div>
         <!--recipe duration -->
@@ -28,8 +28,7 @@
             <div class="col">
                 <label for="recipe_duration">Recipe Duration</label>
                 <input id="recipe_duration" class="form-control" placeholder="Enter Duration" 
-                name="recipe_duration" minlength="1" maxlength="5" type="number" required
-                value="{{ recipe.recipe_duration }}">
+                name="recipe_duration" type="number" required value="{{ recipe.recipe_duration }}">
             </div>
         </div>
         <!-- cuisine id -->
@@ -52,16 +51,12 @@
         <div class="row">
             <div class="col">
                 <div class="switch">
-                    <label for="is_vegetarian">
-                        {% if recipe.is_vegetarian == True %}
-                            <input id="is_vegetarian" name="is_vegetarian" type="checkbox" checked>
-                        {% else %}
-                            <input id="is_vegetarian" name="is_vegetarian" type="checkbox">
-                        {% endif %}
-                        <!-- <input id="is_vegetarian" name="is_vegetarian" type="checkbox"> -->
-                        <span class="lever"></span>
-                        Is Vegetarian
-                    </label>
+                    <label for="is_vegetarian">Is Vegetarian</label>
+                    {% if recipe.is_vegetarian == True %}
+                        <input id="is_vegetarian" name="is_vegetarian" type="checkbox" checked>
+                    {% else %}
+                        <input id="is_vegetarian" name="is_vegetarian" type="checkbox">
+                    {% endif %}
                 </div>
             </div>
         </div>

@@ -8,6 +8,10 @@ h2 {
   color: rgba(47, 23, 15, 0.9);
 }
 
+.section-heading {
+  margin-top: 50px;
+}
+
 .page-section {
   padding: 0;
 }
@@ -16,6 +20,10 @@ h2 {
   background-color: rgba(47, 23, 15, 0.9);
   color: rgba(255, 255, 255, 0.7); 
   margin: 5px;
+}
+
+.add-btn {
+  margin-bottom: 20px;
 }
 
 .btn:hover {
@@ -108,7 +116,12 @@ label {
 /* ----------------------------------------add_cuisines.html */
 
 #add-cuisine-btn {
-  margin-top: 10px;
+  margin: 30px;
+}
+
+#cuisine_name_label {
+  
+  margin: 35px 0 4px 0;
 }
 
 
@@ -125,4 +138,6 @@ label {
     color: #e6a756;
   }
 }
+
+
 
