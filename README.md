@@ -234,17 +234,17 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   [Bootstrap 5.3.2](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System, navbar and also for styling.
+-   [Bootstrap 5.3.2](https://getbootstrap.com/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System, navbar and also for styling.
+-   [Bootstrap Theme, Start Bootstrap, Business Casual](https://startbootstrap.com/theme/business-casual/): Bootstrap theme used for a lot of the styling. Colours, fonts and layout used.
+-   I got the code for the form on the contact page from the [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/forms/overview/#overview)
+-   I got a lot of inspiration for my code from the code institute Task manager walkthrough project. This helped me with all the routed and crud functionality. [Code intitute.](https://codeinstitute.net/)
+
 
 
 
 ### Content
 
 -   All content was written by the developer.
-
-### Media
-
--   The massage image was found on pexel, a free image database.
 
 ### Acknowledgements
 
