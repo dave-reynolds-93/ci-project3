@@ -1,8 +1,8 @@
 <h1 align="center">Reynolds Recipes Website</h1>
 
-![index.html](/assets/images/indexDesktop.png)
+![index.html](/recipes/static/images/recipesDesktop.png)
 
-[View the live project here.](https://dave-reynolds-93.github.io/project-2/)
+[View the live project here.](https://reynolds-recipes-15f735067036.herokuapp.com)
 
 This is a recipe site with the aim of clients sharing recipes. It is aimed at people wanting to share there recipes and learn new ones. Features include information about the recipes, with full crud functionality for recipes and cuisine types. with easy navigation between pages.
 
@@ -30,8 +30,6 @@ This is a recipe site with the aim of clients sharing recipes. It is aimed at pe
         -   The three main colours used are rgba(255, 255, 255, 0.7), #e6a756 and rgba(47, 23, 15, 0.9). The failures for the colour contrast are for the colours that don't interact on the website. All the colours that interact pass. ![](recipes/static/images/colourContrast.png)
     -   #### Typography
         -   Raleway and Lora are the 2 fonts used throughout the website, with many backups for both as the fallback font in case for any reason the fonts aren't being imported into the site correctly. The 2 fonts are very clean, and give the website a professional feel.
-    -   #### Imagery
-        -   N/A
 
 *   ### Wireframes
 
@@ -53,7 +51,7 @@ This is a recipe site with the aim of clients sharing recipes. It is aimed at pe
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 -   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 -   [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
--   [SQL Alchemy](https://en.wikipedia.org/wiki/Flask_(web_framework)))
+-   [SQL Alchemy](https://en.wikipedia.org/wiki/Flask_(web_framework))
 
 ### Frameworks, Libraries & Programs Used
 
@@ -74,7 +72,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
--   [JsHint](https://jshint.com/)
 
 1.  base.html validated. Jinja errors and warnings.
 ![base.html Validated](/recipes/static/images/baseValidated.png)
@@ -183,52 +180,139 @@ Mobile
 ![Header mobile](/recipes/static/images/headerMobile.png)
 
 
-## Deployment
+# Deployment
 
-### GitHub Pages
+## How to run this project locally
 
-The project was deployed to GitHub Pages using the following steps...
+To run this project on your own IDE follow the instructions below:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/dave-reynolds-93/project-2)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com/dave-reynolds-93/project-2/settings/pages) in the "GitHub Pages" section.
+Ensure you have the following tools: 
+    - An IDE such as [Visual Studio Code](https://code.visualstudio.com/)
 
-### Forking the GitHub Repository
+The following **must be installed** on your machine:
+    - [PIP](https://pip.pypa.io/en/stable/installing/)
+    - [Python 3](https://www.python.org/downloads/)
+    - [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+### Instructions
+1. Save a copy of the github repository located at https://github.com/dave-reynolds-93/ci-project3 by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
+    ```
+    git clone https://github.com/dave-reynolds-93/ci-project3
+    ```
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/dave-reynolds-93/project-2)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+2. Open your preferred IDE, open a terminal session in the unzip folder or cd to the correct location.
 
-### Making a Local Clone
+3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment. Enter the command:
+    ```
+    python -m venv venv
+    ```  
+_NOTE: The `python` part of this command and the ones in other steps below assumes  you are working with a windows operating system. Your Python command may differ, such as `python3` or `py`_
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/dave-reynolds-93/project-2)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
+4. Activate the venv with the command:
+    ```
+    venv\Scripts\activate 
+    ```
+_Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further instructions._
 
-```
-$ git clone https://github.com/dave-reynolds-93/project-2
-```
+5. If needed, Upgrade pip locally with
+    ```
+    pip install --upgrade pip
+    ```
 
-7. Press Enter. Your local clone will be created.
+6. Install all required modules with the command 
+    ```
+    pip -r requirements.txt
+    ```
 
-```
-$ git clone https://github.com/dave-reynolds-93/project-2
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
+7. Set up the following environment variables within your IDE. 
 
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+    - If using VSCode, locate the `settings.json` file within the .vscode directory and add your environment variables as below. Do not forget to restart your machine to activate your environment variables or your code will not be able to see them: 
+
+    ```json
+    "terminal.integrated.env.windows": {
+        "IP": "<enter ip here>",
+        "PORT": "<enter port here>",
+        "SECRET_KEY": "<enter secret key here>",
+        "DEBUG": "<enter debug True/False here>",
+        "DEVELOPMENT": "<enter development True/False here>",
+        "DB_URL": "<enter db url here>",
+    }
+    ```
+
+    - If using an IDE that includes a `bashrc` file, open this file and enter all the environment variables listed above using the following format: 
+    ```
+    HOSTNAME="<enter key here>"
+    ```
+    - `HOSTNAME` should be the local address for the site when running within your own IDE.
+    - `DEV` environment variable is set only within the development environment, it does not exist in the deployed version, making it possible to have different settings for the two environments. For example setting DEBUG to True only when working in development and not on the deployed site.
+
+8. If you have restarted your machine to activate your environment variables, do not forget to reactivate your virtual environment with the command used at step 4.
+
+9. Migrate the admin panel models to create your database template with the terminal command
+    ```
+    python manage.py migrate
+    ```
+
+10. Create your superuser to access the django admin panel and database with the following command, and then follow the steps to add your admin username and password:
+    ```
+    python manage.py createsuperuser
+    ```
+
+11. You can now run the program locally with the following command: 
+    ```
+    python manage.py runserver
+    ```
+
+12. Once the program is running, go to the local link provided and add `/admin` to the end of the ur. Here log in with your superuser account and create instances of ShippingDestination and Product within the new database.
+
+13. Once instances of these items exist in your database your local site will run as expected.
+
+
+## Heroku Deployment
+
+To deploy The House of Mouse webshop to heroku, take the following steps:
+
+1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
+
+2. Create a `Procfile` with the terminal command `echo web: python app.py > Procfile`.
+
+3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
+
+3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to whichever is applicable for your location.
+
+4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+
+5. Confirm the linking of the heroku app to the correct GitHub repository.
+
+6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+
+7. Set the following config vars:
+
+| Key | Value |
+--- | ---
+IP | `<your IP key>`
+PORT | `<your port here>`
+DATABASE_URL | `<your postgres database url>`
+SECRET_KEY | `<your secret key>`
+DEBUG | `<True>`
+
+DEBUG is only set temporarily in case we have any errors during deployment.
+
+8. From the command line of your local IDE:
+    - Enter the heroku postres shell 
+    - Migrate the database models 
+    - Create your superuser account in your new database
+    
+     Instructions on how to do these steps can be found in the [heroku devcenter documentation](https://devcenter.heroku.com/articles/heroku-postgresql).
+
+9. In your heroku dashboard, click "Deploy". Scroll down to "Manual Deploy", select the master branch then click "Deploy Branch".
+
+10. Once the build is complete, click the "View app" button provided.
+
+11. From the link provided add `/admin` to the end of the url, log in with your superuser account and create instances of ShippingDestination and Product within the new database.
+
+12. Once instances of these items exist in your database your heroku site will run as expected.
+
 
 ## Credits
 
@@ -240,11 +324,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   I got a lot of inspiration for my code from the code institute Task manager walkthrough project. This helped me with all the routed and crud functionality. [Code intitute.](https://codeinstitute.net/)
 
 
-
-
 ### Content
 
 -   All content was written by the developer.
+
 
 ### Acknowledgements
 
