@@ -131,6 +131,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   When there are no recipes, it still says here are the recipes. Same for cuisine page.
 -   Reynolds Recipes in the nav link isn't working.
 -   Recipe description text area won't allow typing longer than 2 lines.
+-   Didn't manage to get popup messages to the user working, when crud functionality performed.
 
 
 ### Bugs that were fixed
